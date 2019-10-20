@@ -1,12 +1,18 @@
 {% extends "index.html" %}
 {% block content %}
-    <div class="card" style="width: 18rem;">
-        <div class="card-body">
-            <h5 class="card-title">medrecord.pdf</h5>
-            <a class="card-link" data-toggle="collapse" href="#dataCollapse">See recorded data</a>
-            <div class="collapse" id="dataCollapse">
-                <div class="card card-body">
-                    <code>{{ data_str }}</code>
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">medrecord.pdf</h5>
+                        <a class="card-link" data-toggle="collapse" href="#dataCollapse">See recorded data</a>
+                        <div class="collapse" id="dataCollapse">
+                            <div class="card card-body">
+                                <code>{{ data_str }}</code>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

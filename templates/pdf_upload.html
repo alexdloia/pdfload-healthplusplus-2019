@@ -1,20 +1,26 @@
 {% extends "index.html" %}
 {% block content %}
-    {% if success %}
-        <div class="alert alert-success" role="alert">
-            PDF successfully uploaded!
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                {% if success %}
+                    <div class="alert alert-success" role="alert">
+                        PDF successfully uploaded!
+                    </div>
+                {% endif %}
+                <h1>Upload new File</h1>
+                <form method=post enctype=multipart/form-data>
+                    <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="customFile" name="file">
+                        <label class="custom-file-label" for="customFile">Choose file</label>
+                    </div>
+                    <input class="btn btn-primary mt-2" type=submit value=Upload>
+                </form>
+                <hr>
+                <form method=post action="/get_file">
+                    <input class="btn btn-success" type=submit value="Get file">
+                </form>
+            </div>
         </div>
-    {% endif %}
-    <h1>Upload new File</h1>
-    <form method=post enctype=multipart/form-data>
-        <div class="custom-file">
-            <input type="file" class="custom-file-input" id="customFile" name="file">
-            <label class="custom-file-label" for="customFile">Choose file</label>
-        </div>
-        <input class="btn btn-primary mt-2" type=submit value=Upload>
-    </form>
-    <hr>
-    <form method=post action="/get_file">
-        <input class="btn btn-success" type=submit value="Get file">
-    </form>
+    </div>
 {% endblock %}

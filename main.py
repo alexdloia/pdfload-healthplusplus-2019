@@ -44,3 +44,7 @@ def get_file():
     with open('medrecord.txt') as f:
         data['data'] = f.read()
     return render_template('get_file.html', data_str=json.dumps(data))
+
+@app.route('/web_form')
+def web_form():
+    return render_template('web_form.html')
