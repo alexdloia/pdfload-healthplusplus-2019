@@ -62,16 +62,16 @@
         </form>
       </div>
     </nav>
-
+      {% block content %}
     <div class="header-content">
-        <div class="emblem"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Smiley.svg/800px-Smiley.svg.png" class="rounded mx-auto d-block" width="600" height="600"></div>
-        <div class="header-huge">UZIMA</div>
-        <div class="header-medium" style="margin-bottom: 20px">We be that good automated shit.</div>
+        <div class="emblem"><img src="{{ url_for('static', filename='img/logo.png') }}" class="rounded mx-auto d-block" width="900" height="600"></div>
+        <div class="header-huge">Saving Lives that Save Lives</div>
+        <div class="header-medium" style="margin-bottom: 20px">Utilizing RPA and AI to elevate medical record storage.</div>
     </div>
 
     <main role="main">
 
-      {% block content %}
+      
 
       <div class="jumbotron jumbotron-fluid">
         <div class="container">
