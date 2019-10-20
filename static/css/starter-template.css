@@ -1,8 +1,9 @@
 body {
   padding-top: 5rem;
-  font-family:Arimo,'Helvetica Neue',Arial,sans-serif;
+  font-family:Montserrat,Roboto,'Helvetica Neue',Arial,sans-serif;
 }
 .starter-template {
   padding: 3rem 1.5rem;
   text-align: center;
+  font-family: Roboto, sans-serif;
 }
