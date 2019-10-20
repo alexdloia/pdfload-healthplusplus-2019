@@ -35,23 +35,24 @@ body {
 }
 
 header .header-content{
-	padding:100px 40px
+	padding:80px 40px
 }
 
 .header-medium {
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	text-align: center;
     font-size: 54px;
     margin-top:0px;
+    margin-bottom:5px;
     color: white;
 }
 
 .header-huge {
 	text-align: center;
-    font-family: 'Raleway', sans-serif;
-    font-size: 100px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 95px;
     margin-top:10px;
-    margin-bottom:0px;
+    margin-bottom:20px;
     font-weight: bold;
     color: white;
 }
